@@ -48,7 +48,8 @@
             this.btnEjecutarJug2 = new System.Windows.Forms.Button();
             this.lblPuntajeJug1 = new System.Windows.Forms.Label();
             this.lblPuntajeJug2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnBorrar = new System.Windows.Forms.Button();
+            this.lblResultado = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblCasilla01
@@ -232,6 +233,7 @@
             this.btnEjecutarJug2.TabIndex = 19;
             this.btnEjecutarJug2.Text = "Jugador 2";
             this.btnEjecutarJug2.UseVisualStyleBackColor = true;
+            this.btnEjecutarJug2.Click += new System.EventHandler(this.btnEjecutarJug2_Click);
             // 
             // lblPuntajeJug1
             // 
@@ -253,15 +255,25 @@
             this.lblPuntajeJug2.Text = "0";
             this.lblPuntajeJug2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button1
+            // btnBorrar
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(692, 353);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(201, 48);
-            this.button1.TabIndex = 22;
-            this.button1.Text = "Borrar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnBorrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBorrar.Location = new System.Drawing.Point(692, 353);
+            this.btnBorrar.Name = "btnBorrar";
+            this.btnBorrar.Size = new System.Drawing.Size(201, 48);
+            this.btnBorrar.TabIndex = 22;
+            this.btnBorrar.Text = "Borrar";
+            this.btnBorrar.UseVisualStyleBackColor = true;
+            this.btnBorrar.Click += new System.EventHandler(this.btnBorrar_Click);
+            // 
+            // lblResultado
+            // 
+            this.lblResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResultado.Location = new System.Drawing.Point(120, 115);
+            this.lblResultado.Name = "lblResultado";
+            this.lblResultado.Size = new System.Drawing.Size(415, 206);
+            this.lblResultado.TabIndex = 23;
+            this.lblResultado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 
@@ -269,7 +281,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(919, 442);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.lblResultado);
+            this.Controls.Add(this.btnBorrar);
             this.Controls.Add(this.lblPuntajeJug2);
             this.Controls.Add(this.lblPuntajeJug1);
             this.Controls.Add(this.btnEjecutarJug2);
@@ -321,7 +334,8 @@
         private System.Windows.Forms.Button btnEjecutarJug2;
         private System.Windows.Forms.Label lblPuntajeJug1;
         private System.Windows.Forms.Label lblPuntajeJug2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnBorrar;
+        private System.Windows.Forms.Label lblResultado;
     }
 }
 
