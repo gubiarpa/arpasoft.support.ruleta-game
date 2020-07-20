@@ -19,6 +19,28 @@ namespace RuletaGame
             InitializeComponent();
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            // Cargamos los valores aleatorios
+            int minValorPremio = 10, maxValorPremio = 100;
+            Random random = new Random();
+            lblCasilla01.Text = random.Next(minValorPremio, maxValorPremio).ToString();
+            lblCasilla02.Text = random.Next(minValorPremio, maxValorPremio).ToString();
+            lblCasilla03.Text = random.Next(minValorPremio, maxValorPremio).ToString();
+            lblCasilla04.Text = random.Next(minValorPremio, maxValorPremio).ToString();
+            lblCasilla05.Text = random.Next(minValorPremio, maxValorPremio).ToString();
+            lblCasilla06.Text = random.Next(minValorPremio, maxValorPremio).ToString();
+            lblCasilla07.Text = random.Next(minValorPremio, maxValorPremio).ToString();
+            lblCasilla08.Text = random.Next(minValorPremio, maxValorPremio).ToString();
+            lblCasilla09.Text = random.Next(minValorPremio, maxValorPremio).ToString();
+            lblCasilla10.Text = random.Next(minValorPremio, maxValorPremio).ToString();
+            lblCasilla11.Text = random.Next(minValorPremio, maxValorPremio).ToString();
+            lblCasilla12.Text = random.Next(minValorPremio, maxValorPremio).ToString();
+            lblCasilla13.Text = random.Next(minValorPremio, maxValorPremio).ToString();
+            lblCasilla14.Text = random.Next(minValorPremio, maxValorPremio).ToString();
+            lblCasilla15.Text = random.Next(minValorPremio, maxValorPremio).ToString();
+            lblCasilla16.Text = random.Next(minValorPremio, maxValorPremio).ToString();
+
             // Limpiamos los resultados
             lblPuntajeJug1.Text = "0";
             lblPuntajeJug2.Text = "0";
