@@ -21,8 +21,11 @@ namespace RuletaGame
 
         private void btnEjecutarJug1_Click(object sender, EventArgs e)
         {
-            int i = 1, veces = 10;
-            while (veces < 160)
+            int minTotalVeces = 80, maxTotalVeces = 100;
+            int i = (new Random()).Next(1, 16);
+            int veces = 1;
+            int totalVeces = (new Random()).Next(minTotalVeces, maxTotalVeces);
+            while (veces <= totalVeces)
             {
                 lblCasilla01.BackColor = i == 1 ? Color.Aqua : Color.Transparent;
                 lblCasilla02.BackColor = i == 2 ? Color.Aqua : Color.Transparent;
@@ -40,15 +43,8 @@ namespace RuletaGame
                 lblCasilla14.BackColor = i == 14 ? Color.Aqua : Color.Transparent;
                 lblCasilla15.BackColor = i == 15 ? Color.Aqua : Color.Transparent;
                 lblCasilla16.BackColor = i == 16 ? Color.Aqua : Color.Transparent;
-                Thread.Sleep(50);
-                if (i < 16)
-                {
-                    i++;
-                }
-                else
-                {
-                    i = 1;
-                }
+                Thread.Sleep(100);
+                if (i < 16) i++; else i = 1;
                 veces++;
                 this.Refresh();
             }
