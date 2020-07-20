@@ -293,7 +293,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
-            this.Text = "Ruleta Mágica";
+            this.Text = "Rueda de la fortuna";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
